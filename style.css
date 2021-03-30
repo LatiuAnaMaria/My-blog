@@ -1,0 +1,94 @@
+html {
+  box-sizing:border-box;
+}
+*,*:before,*:after {
+  box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.header {
+  text-align: center;
+}
+ a {
+  text-decoration: none;
+  color: blue;
+}
+a:hover {
+  text-decoration : underline;
+}
+.personal-info {
+  text-align: center;
+}
+.content {
+  background-color: cyan;
+  border: 2px solid blue;
+  width: 100vw;
+  height: 41vw; 
+}
+.main {
+  height:50vw;
+  width: 100vw;
+  padding: auto;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 45vw 45vw;
+  grid-template-rows: 25vh 25vh;
+  grid-template-areas: 
+  "top" "top"
+  "bottomLeft" "bottomRight";
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.card {
+  display : flex;
+  width: 600px;
+  height: 220px;
+  margin-top: 30px;
+  padding: 20px;
+  border: 2px solid black;
+}
+
+.card-title{
+  text-align: center;
+}
+/*to do cards*/
+.card-body{
+  grid-area: "top";
+  color:black;
+}
+
+
+.second-card{
+  grid-area: "bottomLeft";
+}
+.third-card{
+  grid-area: "top";
+}
+.fourth-card{
+  grid-area: "bottomRigth";
+}
+.footer {
+  display : flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 37px;
+  color : blue;
+}
+
+.nextPage {
+  margin-top: 80px;
+  border: 1px solid blue;
+  border-radius: 10px;
+  background-color: yellow;
+  }
+
+.paragraph-card{
+   text-align: center;
+}
+      
+  
+  
